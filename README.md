@@ -5,6 +5,7 @@ Per the designer of this course, Eric Lohmar, this set of exercises serves to "[
 
 # Running the Files
 **01: Python Data Types and Collections**
+
 Simply download the file and run in the command line.
 ```bash
 python "01. Python Data Types.py"
