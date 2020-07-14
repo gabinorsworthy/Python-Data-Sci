@@ -20,9 +20,9 @@ except Exception as e:
 # Write your code below:
 print("Answer 1:")
 if (47689 % 7 == 0):
-    print("7 is a multiple of 47689\n")
+    print("7 is a multiple of 47689\n \n")
 else:
-    print("7 is not a multiple of 47689\n")
+    print("7 is not a multiple of 47689\n \n")
 
 #%% [markdown]
 # 2. Divide 27 by 7 and display the results as-is, rounded to the nearest int, and rounded to 6 decimal places
@@ -35,6 +35,11 @@ print("standard division: " + str(result))
 print("rounded to nearest int: " + str(round(result)))
 print("rounded to 6 decimals: " + str(round(result,6)) + "\n")
 
+print("Testing other print methods:")
+print("standard division:", result)
+print("rounded to nearest int: {}".format(round(result)))
+print(f"rounded to 6 decimals: {round(result,6)} \n \n")
+
 #%% [markdown]
 # 3. Find the distance between the points (1, 7) and (7, 1) using the equation $\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
 
@@ -43,6 +48,11 @@ print("rounded to 6 decimals: " + str(round(result,6)) + "\n")
 print("Answer 3:")
 distance = ((7-1)**2+(1-7)**2)**.5
 print("The distance between (1,7) and (7,1) is " + str(distance) + "\n")
+
+print("Testing other print methods")
+print("The distance between (1,7) and (7,1) is", distance)
+print("The distance between (1,7) and (7,1) is {}".format(distance))
+print(f"The distance between (1,7) and (7,1) is {distance} \n \n")
 
 #%% [markdown]
 # 4. Create a string that will span several lines when printed, assign it to a variable, and print it.
@@ -64,7 +74,7 @@ real_exercise = "Sorry, dude; I can't go right now, I have to head home and go f
 # Write your code below:
 print("Answer 5:")
 real_exercise = real_exercise.replace('run','\U0001F4A9')
-print(real_exercise + "\n")
+print(real_exercise + "\n \n")
 
 #%% [markdown]
 # 6. Create an empty list then add 6 values into it of any type.
@@ -84,6 +94,7 @@ print('\n')
 #%%
 # Write your code below:
 print('Answer 7:')
+print('NOTE: Tuples are immutable in Python')
 myTuple = ()
 myTuple += (1,'two',(3,4),(5,6),'seven',8)
 for i in myTuple:
@@ -109,9 +120,9 @@ pythons = {'Chapman', 'Cleese', 'Jones', 'Idle', 'Palin', 'Gilliam'}
 # Write your code below:
 print('Problem 9:')
 if 'Idle' in pythons:
-    print('"Idle" in set\n')
+    print('"Idle" in set\n \n')
 else:
-    print('"Idle" not in set\n')
+    print('"Idle" not in set\n \n')
 
 #%% [markdown]
 # 10. Create a dictionary with fruit names for keys and numeric prices for values then output the price of an order that contains 3 apples, 2 bananas, 1 satsuma, and 8% tax.
