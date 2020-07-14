@@ -4,7 +4,7 @@
 Per the designer of this course, Eric Lohmar, this set of exercises serves to "[Explore] the world of the Python Programming language with the intent to gain an understanding of Data Science and Marchine Learning processes and skills."
 
 # Running the Files
-* 01: Python Data Types and Collections
+**01: Python Data Types and Collections**
 Simply download the file and run in the command line.
 ```bash
 python "01. Python Data Types.py"
