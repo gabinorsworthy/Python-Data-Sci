@@ -24,7 +24,7 @@ spaces = myStr.count(' ')
 newlines = myStr.count('\n')
 
 print("The number of spaces is: {}".format(spaces))
-print(f"The number of newline characters is: {newlines}\n")
+print(f"The number of newline characters is: {newlines}\n\n")
 
 #%% [markdown]
 # 2. Display all of the text between and including the first and last occurences of the `~` character in the below string.
@@ -36,14 +36,22 @@ startIndex = s.find('~')
 endIndex = s.rfind('~')
 
 print("Answer 2:")
-print(s[startIndex:endIndex + 1])
-print()
+print(f"{s[startIndex:endIndex + 1]}\n\n")
 
 #%% [markdown]
 # 3. Display a grid of numbers from 1 to 100 in 10 rows of 10 and `|` between each column.
 
 #%%
 # Write your code below:
+grid = '\n'.join(
+    '|'.join(
+        f'{(column + (row * 10)):3}' for column in range(1,11)
+    )
+    for row in range(10)
+)
+
+print("Answer 3:")
+print(f"{grid}\n\n")
 
 #%% [markdown]
 # 4. Display the second word of the third line in the below string.
@@ -54,6 +62,11 @@ this is also a line
 New lines everywhere!
 so many lines!"""
 # Write your code below:
+thirdLine = s.split('\n')[2]
+secondWord = thirdLine.split(' ')[1]
+
+print("Answer 4:")
+print(f"{secondWord}\n\n")
 
 #%% [markdown]
 # 5. The below variable, `beowulf`, is a text document containing the epic poems anout the advanetures of Beowulf. Casefold it, strip the punctuation and numbers, and store it in another variable.
