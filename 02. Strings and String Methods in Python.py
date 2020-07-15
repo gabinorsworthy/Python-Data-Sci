@@ -32,6 +32,12 @@ print(f"The number of newline characters is: {newlines}\n")
 #%%
 s = "This is~the whacky~string dance~is it not?"
 # Write your code below:
+startIndex = s.find('~')
+endIndex = s.rfind('~')
+
+print("Answer 2:")
+print(s[startIndex:endIndex + 1])
+print()
 
 #%% [markdown]
 # 3. Display a grid of numbers from 1 to 100 in 10 rows of 10 and `|` between each column.
