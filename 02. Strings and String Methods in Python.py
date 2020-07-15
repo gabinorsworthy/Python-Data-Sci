@@ -17,6 +17,14 @@ except:
 
 #%%
 # Write your code below:
+print("Answer 1:")
+
+myStr = "This is my string. I am very proud of my string.\n"
+spaces = myStr.count(' ')
+newlines = myStr.count('\n')
+
+print("The number of spaces is: {}".format(spaces))
+print(f"The number of newline characters is: {newlines}\n")
 
 #%% [markdown]
 # 2. Display all of the text between and including the first and last occurences of the `~` character in the below string.
@@ -45,8 +53,9 @@ so many lines!"""
 # 5. The below variable, `beowulf`, is a text document containing the epic poems anout the advanetures of Beowulf. Casefold it, strip the punctuation and numbers, and store it in another variable.
 
 #%%
-with open('beowulf.txt') as f:
-    beowulf = f.read()
+# get text file
+#with open('beowulf.txt') as f:
+#    beowulf = f.read()
 # Write your code below:
 
 #%% [markdown]
