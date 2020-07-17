@@ -18,6 +18,7 @@ except:
 #%%
 # Write your code below:
 from random import randint
+from random import uniform
 
 #%% [markdown]
 # 1. Pick a random number between 1 and 20. Print a note that describes if that number is  less than 5, less than 10, less than 15, or greater than or equal to 20.
@@ -98,12 +99,36 @@ print(f'The total sum of numbers is {totalSum}.\n\n')
 #%%
 noodles = ('Udon', 'Lo Mein', 'Japchae', 'Pho', 'Spaghetti')
 # Write your code below:
+print("Answer 5:")
+food_menu = {}
+
+for food in noodles:
+    random_val = round(uniform(0,10),2)
+    food_menu.update( {food:random_val})
+
+bill = 1 * food_menu['Udon'] + 2 * food_menu['Lo Mein'] + 3 * food_menu['Japchae'] + 4 * food_menu['Pho'] + 5 * food_menu['Spaghetti']
+print(f'The total is ${bill}')
 
 #%% [markdown]
 # 6. Print the first 10 digits of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) in a comma-delimited string, starting with 0.
 
 #%%
 # Write your code below:
+print('Answer 6: first 10 digits of the Fibonacci sequence')
+
+f_1 = 0
+f_2 = 1
+print(f_1)
+print(f_2)
+
+for i in range(0,8):
+    f_3 = f_1 + f_2
+    print(f_3)
+
+    f_1 = f_2
+    f_2 = f_3
+
+print('\n')
 
 #%% [markdown]
 # 7. Write a loop that can find the highest value and its index in the `peaked` variable below without using any sort of `max` or `index`/`find` functions.
