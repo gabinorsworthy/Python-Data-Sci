@@ -24,24 +24,73 @@ from random import randint
 
 #%%
 # Write your code below:
+print("Answer 1:")
+random_int = randint(1,20)
+
+print(f'Your number is {random_int}')
+if random_int < 5:
+    print(f'{random_int} is less than 5')
+if random_int < 10:
+    print(f'{random_int} is less than 10')
+if random_int < 15:
+    print(f'{random_int} is less than 15')
+if random_int >= 20:
+    print(f'{random_int} is greater than or equal to 20')
+
+print('\n')
 
 #%% [markdown]
 # 2. Pick a random number between -5 and 5. Assign a variable to 'N' if the number is negative, 'P' if the number is positive, or 0 if the number is 0 and display the value of variable.
 
 #%%
 # Write your code below:
+print('Answer 2:')
+random_int = randint(-5,5)
+
+if random_int < 0:
+    ans = 'N'
+elif random_int > 0:
+    ans = 'P'
+else:
+    ans = 0
+
+print(f'{random_int} returns value {ans}\n\n')
 
 #%% [markdown]
 # 3. Write a loop that accepts user input until the user submits the string "~END~".
 
 #%%
 # Write your code below:
+print("Answer 3:")
+user_input = ''
+
+while user_input != '~END~':
+    user_input = input("Enter ~END~ to end loop: ")
+
+print('\n')
 
 #%% [markdown]
 # 4. Create a collection that contains 20 random numbers between 1 and 10. Iterate over that collection printing the even values, multiplying the odds to each other, and summing all numbers then print the resulting product and sum.
 
 #%%
 # Write your code below:
+myList = [randint(1,10) for i in range(0,20)]
+
+totalSum = 0
+product = 1
+
+for item in myList:
+    if not item % 2:
+        print(item)
+    else:
+        product *= item
+    
+    totalSum += item
+
+print("Answer 4:")
+print(f'\n{myList}\n')
+print(f'The product of odd numbers is {product}.')
+print(f'The total sum of numbers is {totalSum}.\n\n')
 
 #%% [markdown]
 # 5. Create a dictionary with the below tuple for keys and random floating point values between 0 and 10 and rounded to 2 digits. Then print the sum of 1 Udon, 2 Lo Mein, 3 Japchae, 4 Pho, and 5 Spaghetti.
