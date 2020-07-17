@@ -143,3 +143,21 @@ nums = tuple({randint(1, 100) for i in range(randint(5, 50))})
 split_idx = randint(0, len(nums) - 1)
 peaked = sorted(nums[:split_idx]) + sorted(nums[split_idx:], reverse=True)
 # Write your code below:
+
+
+# %%
+print("Answer 7:")
+max_val = 0
+index = 0
+print(peaked)
+for val in peaked:
+    if val < max_val:
+        break
+    else:
+        max_val = val
+    index += 1
+
+print(f'The peak is {max_val} at index {index}')
+
+
+# %%
