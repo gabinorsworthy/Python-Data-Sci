@@ -6,12 +6,22 @@ Per the designer of this course, Eric Lohmar, this set of exercises serves to "[
 # Running the Files
 **01: Python Data Types and Collections**
 
-Simply download the file and run in the command line.
+Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
 ```bash
 python "01. Python Data Types.py"
 ```
 * 02: Strings and String Methods in Python
+
+Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
+```bash
+python "02. Strings and String Methods in Python.py"
+```
 * 03: Control Flow in Python
+
+Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
+```bash
+python "03. Control Flow in Python.py"
+```
 * 04: Functions in Python
 * 05: Classes and Objects in Python
 * 06: Intro to Pandas
