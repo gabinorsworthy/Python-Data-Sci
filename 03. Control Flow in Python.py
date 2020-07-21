@@ -80,6 +80,8 @@ myList = [randint(1,10) for i in range(0,20)]
 totalSum = 0
 product = 1
 
+print("Answer 4:")
+
 for item in myList:
     if not item % 2:
         print(item)
@@ -88,7 +90,7 @@ for item in myList:
     
     totalSum += item
 
-print("Answer 4:")
+
 print(f'\n{myList}\n')
 print(f'The product of odd numbers is {product}.')
 print(f'The total sum of numbers is {totalSum}.\n\n')
@@ -107,7 +109,7 @@ for food in noodles:
     food_menu.update( {food:random_val})
 
 bill = 1 * food_menu['Udon'] + 2 * food_menu['Lo Mein'] + 3 * food_menu['Japchae'] + 4 * food_menu['Pho'] + 5 * food_menu['Spaghetti']
-print(f'The total is ${bill}')
+print(f'The total is ${bill}\n\n')
 
 #%% [markdown]
 # 6. Print the first 10 digits of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) in a comma-delimited string, starting with 0.
