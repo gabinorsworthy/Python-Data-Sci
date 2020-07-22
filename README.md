@@ -23,6 +23,10 @@ Simply download the file and run in the command line. You can also run the Jupyt
 python "03. Control Flow in Python.py"
 ```
 * 04: Functions in Python
+Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
+```bash
+python "04. Functions in Python.py"
+```
 * 05: Classes and Objects in Python
 * 06: Intro to Pandas
 * 07: Understanding and Interpolating Data with Pandas
@@ -30,4 +34,4 @@ python "03. Control Flow in Python.py"
 * 09: Data Science Basics and Principles
 * 10: Supervised ML Algorithms
 * 11: Unsupervised ML Algorithms
-* 12: Pizza Party! + Using ML on Text Data (2 hour class)
+* 12: Using ML on Text Data (2 hour class)
