@@ -4,30 +4,22 @@
 Per the designer of this course, Eric Lohmar, this set of exercises serves to "[Explore] the world of the Python Programming language with the intent to gain an understanding of Data Science and Machine Learning processes and skills."
 
 # Running the Files
-**01: Python Data Types and Collections**
-
-Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
-```bash
-python "01. Python Data Types.py"
-```
+The first 5 exercises focus on learning the basics of Python - data types, string methods, conditionals, loops, functions, classes, and objects.
+* 01: Python Data Types and Collections
 * 02: Strings and String Methods in Python
-
-Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
-```bash
-python "02. Strings and String Methods in Python.py"
-```
 * 03: Control Flow in Python
-
-Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
-```bash
-python "03. Control Flow in Python.py"
-```
 * 04: Functions in Python
-Simply download the file and run in the command line. You can also run the Jupyter cells in the Python Interactive Window on VS Code.
-```bash
-python "04. Functions in Python.py"
-```
 * 05: Classes and Objects in Python
+
+To run the exercises above, simply download the file and run in the following command line prompt. 
+```bash
+python "[file name]"
+```
+Using VS Code, you can also run the Jupyter cells in the Python Interactive Window. Be sure to install Jupyter using the following command line prompt.
+```bash
+pip install jupyter
+```
+
 * 06: Intro to Pandas
 * 07: Understanding and Interpolating Data with Pandas
 * 08: Visualizing Data with Pandas, MatPlotLib, and Seaborn
