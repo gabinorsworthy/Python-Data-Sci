@@ -23,7 +23,3 @@ pip install jupyter
 * 06: Intro to Pandas
 * 07: Understanding and Interpolating Data with Pandas
 * 08: Visualizing Data with Pandas, MatPlotLib, and Seaborn
-* 09: Data Science Basics and Principles
-* 10: Supervised ML Algorithms
-* 11: Unsupervised ML Algorithms
-* 12: Using ML on Text Data (2 hour class)
