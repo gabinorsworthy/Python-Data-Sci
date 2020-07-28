@@ -53,23 +53,44 @@ display(causeNames2)
 #%%
 # Write your code below:
 # rows where Year == 2012
-df2012 = df.loc[df['Year'] == 2012]
+df2012 = df.loc[(df['Year'] == 2012)  & (df['Cause Name'] =='All causes')]
 
 # Group by state and get total deaths for each
 display(df2012.groupby(df2012['State']).agg({'Deaths': 'sum'}))
 
 # United States total vs Everyone else total
-print('All States Total vs United States Total')
+print('\nAll States Total vs United States Total:')
 display(df2012.groupby(df2012['State'] == 'United States').agg({'Deaths': 'sum'}))
 
 #%% [markdown]
 # 4. Print the top 5 causes of death in each state for 2016, not including "All causes".
 #%%
 # Write your code below:
+# rows where Year == 2016
+df2016 = df.loc[
+    (df['Year'] == 2016)
+    & (df['Cause Name'] != 'All causes'),
+    ['State','Cause Name','Deaths']
+].sort_values(by=['Deaths'], ascending=False)
+
+# sort by deaths
+for idx, gdf in df2016.groupby('State'):
+    print(f"{idx}'s Top 5 Causes of Death 2016\n")
+    print(f"{gdf.loc[:,['Cause Name','Deaths']].head()}\n\n")
 
 #%% [markdown]
 # 5. Display the top 5 causes of death for your favorite state for each year available
 #%%
 # Write your code below:
+df2016 = df.loc[
+    (df['State'] == 'Texas')
+    & (df['Cause Name'] != 'All causes'),
+    ['Year','Cause Name','Deaths']
+].sort_values(by=['Deaths'], ascending=False)
+
+# sort by deaths
+for idx, gdf in df2016.groupby('Year'):
+    print(f"Texas' Top 5 Causes of death {idx}\n")
+    print(f"{gdf.loc[:,['Cause Name','Deaths']].head()}\n\n")
 
 #%%
