@@ -74,6 +74,12 @@ plt.show()
 #    display the first five rows
 #%%
 # Write your code below:
+tips = pd.read_csv('C://Users/241556/Documents/00 Co-Op/Python-Data-Sci/resources/tips.csv')
+tips.head()
+
+tips['tip percentage'] = (tips.tip / tips.total_bill) * 100
+
+tips.head()
 
 #%% [markdown]
 # 5. Make a swarm plot comparing tip percentages on each day with the
