@@ -25,8 +25,10 @@ import seaborn as sbn
 # Write your code below:
 stocks = pd.read_csv('C://Users/241556/Documents/00 Co-Op/Python-Data-Sci/resources/aalStock.csv')
 
+# converts sorted date values to datetime
+# then reformates date to MM-DD-YYYY rather than year first
 stocks = stocks.set_index(
-    stocks.date.sort_values()
+    pd.to_datetime(stocks.date.sort_values()).dt.strftime('%m-%d-%Y')
 )
 
 stocks.head()
@@ -39,6 +41,13 @@ stocks.head()
 #       have data starting on the 7th day.
 # %%
 # Write your code below:
+stocks['7-Day Avg'] = stocks.rolling(7).high.mean()
+stocks['30-Day Avg'] = stocks.rolling(30).high.mean()
+
+#display(stocks.head(40))
+
+stocks.loc[:, ['high', '7-Day Avg', '30-Day Avg']].plot()
+plt.show()
 
 # %% [markdown]
 # 3. Make a vertical 3 plot figure with the x-axes lined up. The first
