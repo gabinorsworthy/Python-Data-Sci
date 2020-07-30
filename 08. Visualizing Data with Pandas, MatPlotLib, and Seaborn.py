@@ -45,6 +45,11 @@ stocks['30-Day Avg'] = stocks.rolling(30).high.mean()
 #display(stocks.head(40))
 
 stocks.loc[:, ['high', '7-Day Avg', '30-Day Avg']].plot()
+
+plt.title('AAL Daily High')
+plt.xlabel('Date')
+plt.ylabel("Today's High ($)")
+
 plt.show()
 
 # %% [markdown]
@@ -55,17 +60,39 @@ plt.show()
 # Write your code below:
 numItems = stocks.shape[0]
 
+plt.figure(figsize=(15,15))
+
+# create 1st subplot
 sp = plt.subplot(311)
 stocks.volume.plot()
 
-plt.subplot(312, sharex=sp)
-plt.plot(stocks.loc[:, ['close', 'open']])
+plt.title('AAL Stock Volume')
+plt.xlabel('')
+plt.ylabel('Volume')
 
+
+#create 2nd subplot
+plt.subplot(312, sharex=sp)
+plt.plot(stocks.loc[:, ['open']], 'g', label='open')
+plt.plot(stocks.loc[:, ['close']], 'r', label='close')
+
+plt.title('AAL Opening and Closing Prices')
+plt.ylabel('Price ($)')
+plt.legend(loc='upper left')
+
+
+# create 3rd subplot
 plt.subplot(313, sharex=sp)
-plt.plot(stocks.loc[:, ['high', 'low']])
+plt.plot(stocks.loc[:, ['high']], 'g', label='high')
+plt.plot(stocks.loc[:, ['low']], 'r', label='low')
+
+plt.title('AAL Daily Highs and Lows')
+plt.xlabel('Date')
+plt.ylabel('Price ($)')
+plt.legend(loc='upper left')
 
 # limits x ticks (wasn't doing by default)
-sp.set_xticks(np.arange(0, numItems, 60))
+sp.set_xticks(np.arange(0, numItems, 30))
 
 plt.show()
 
@@ -91,6 +118,9 @@ tips.head()
 #%%
 # Write your code below:
 ax = sbn.swarmplot(x="day", y="tip percentage", hue="smoker", data=tips)
+plt.title('Tip Percentage by Customer')
+plt.xlabel('Day of the Week')
+plt.ylabel('Tip Percentage (%)')
 
 plt.show()
 
