@@ -33,4 +33,32 @@ these exercises, the plots will show up, but the dataframes and other results ar
 # Exercise Examples
 Below are some example graphs created in the final exercise.
 
-****
+**AAL Daily Highs**
+
+The below graph was created from the data in 'aalStock.csv' and displays the daily, 7-day rolling average, and 30-day rolling average lines for the stock's highs.
+
+Using pandas, the information was prepped by pulling data from the file into a dataframe, re-indexing and sorting the dataframe based on date,
+and creating new columns with the 7-day and 30-day rolling averages. Then, using matplotlib, the three lines from the dataframe were plotted and labeled on the figure.
+
+![AAL Daily Highs](/images/aal_daily_high.png)
+
+
+**AAL Stock Data**
+
+The below subplots were created using the same data from the previous graph. The three subplots show the following information, respectively:
+1. AAL stock volume over time
+2. AAL daily opening and closing prices
+3. AAL daily high and low prices
+
+![AAL Stock Data](/images/aal_stock_subplots.png)
+
+
+**Tip Percentage by Customer**
+
+The figure below was created from the data in 'tips.csv' and displays a swarmplot representing the tip percentage of customers - each dot representing an individual customer.
+The customers are further broken down by day of the week they visited (on the x-axis) and smoker vs. non-smoker (by color).
+
+Using pandas, the information was prepped by pulling data from the file into a dataframe and creating a new column for tip percentage based on the tip and the total bill.
+The figure was created using seaborn's swarmplot method and then label and displayed using matplotlib.
+
+![Tip % Swarmplot](/images/tip_percentage_swarmplot.png)
