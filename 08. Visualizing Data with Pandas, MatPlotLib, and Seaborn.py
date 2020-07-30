@@ -87,8 +87,11 @@ tips.head()
 
 #%% [markdown]
 # 5. Make a swarm plot comparing tip percentages on each day with the
-#    markers coloed by smoker or non-smoker
+#    markers colored by smoker or non-smoker
 #%%
 # Write your code below:
+ax = sbn.swarmplot(x="day", y="tip percentage", hue="smoker", data=tips)
+
+plt.show()
 
 #%%
