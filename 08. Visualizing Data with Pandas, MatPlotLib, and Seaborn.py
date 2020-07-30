@@ -25,11 +25,9 @@ import seaborn as sbn
 # Write your code below:
 stocks = pd.read_csv('C://Users/241556/Documents/00 Co-Op/Python-Data-Sci/resources/aalStock.csv')
 
-# converts sorted date values to datetime
-# then reformates date to MM-DD-YYYY rather than year first
 stocks = stocks.set_index(
-    pd.to_datetime(stocks.date.sort_values()).dt.strftime('%m-%d-%Y')
-)
+    stocks.date
+).sort_index(ascending=True)
 
 stocks.head()
 
@@ -55,6 +53,21 @@ plt.show()
 #    the third will have high and low
 #%%
 # Write your code below:
+numItems = stocks.shape[0]
+
+sp = plt.subplot(311)
+stocks.volume.plot()
+
+plt.subplot(312, sharex=sp)
+plt.plot(stocks.loc[:, ['close', 'open']])
+
+plt.subplot(313, sharex=sp)
+plt.plot(stocks.loc[:, ['high', 'low']])
+
+# limits x ticks (wasn't doing by default)
+sp.set_xticks(np.arange(0, numItems, 60))
+
+plt.show()
 
 #%% [markdown]
 # 4. Load tips.csv to a variable, add a column for tip percentage, and
