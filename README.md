@@ -3,7 +3,7 @@
 
 Per the designer of this course, Eric Lohmar, this set of exercises serves to "[Explore] the world of the Python Programming language with the intent to gain an understanding of Data Science and Machine Learning processes and skills."
 
-# Running the Files
+# Python Basics
 The first 5 exercises focus on learning the basics of Python - data types, string methods, conditionals, loops, functions, classes, and objects.
 * 01: Python Data Types and Collections
 * 02: Strings and String Methods in Python
@@ -20,6 +20,17 @@ Using VS Code, you can also run the Jupyter cells in the Python Interactive Wind
 pip install jupyter
 ```
 
+# Python Pandas, MatPlotLib, and Seaborn
+The final 3 exercises focus on understanding pandas, matplotlib, and seaborn Python libraries as they apply to data visualization and statistical analysis.
 * 06: Intro to Pandas
 * 07: Understanding and Interpolating Data with Pandas
 * 08: Visualizing Data with Pandas, MatPlotLib, and Seaborn
+
+To run the exercises above, I highly recommend using Python's Interactive Window to run the Jupyter cells.
+The dataframes and data displays much cleaner using the interactive window. If using the command line to run
+these exercises, the plots will show up, but the dataframes and other results are not set up to print in the command line.
+
+# Exercise Examples
+Below are some example graphs created in the final exercise.
+
+****
