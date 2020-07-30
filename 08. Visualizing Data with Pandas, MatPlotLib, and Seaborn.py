@@ -23,6 +23,13 @@ import seaborn as sbn
 #    'date' column, and with the rows sorted on the same
 # %%
 # Write your code below:
+stocks = pd.read_csv('C://Users/241556/Documents/00 Co-Op/Python-Data-Sci/resources/aalStock.csv')
+
+stocks = stocks.set_index(
+    stocks.date.sort_values()
+)
+
+stocks.head()
 
 # %% [markdown]
 # 2. Show the daily, 7-day rolling average, and 30-day rolling average
