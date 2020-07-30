@@ -33,6 +33,8 @@ these exercises, the plots will show up, but the dataframes and other results ar
 # Exercise Examples
 Below are some example graphs created in the final exercise.
 
+<br/>
+
 **AAL Daily Highs**
 
 The below graph was created from the data in 'aalStock.csv' and displays the daily, 7-day rolling average, and 30-day rolling average lines for the stock's highs.
@@ -42,6 +44,7 @@ and creating new columns with the 7-day and 30-day rolling averages. Then, using
 
 ![AAL Daily Highs](/images/aal_daily_high.png)
 
+<br/>
 
 **AAL Stock Data**
 
@@ -52,6 +55,7 @@ The below subplots were created using the same data from the previous graph. The
 
 ![AAL Stock Data](/images/aal_stock_subplots.png)
 
+<br/>
 
 **Tip Percentage by Customer**
 
