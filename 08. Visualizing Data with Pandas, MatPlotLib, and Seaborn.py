@@ -77,7 +77,11 @@ plt.show()
 tips = pd.read_csv('C://Users/241556/Documents/00 Co-Op/Python-Data-Sci/resources/tips.csv')
 tips.head()
 
-tips['tip percentage'] = (tips.tip / tips.total_bill) * 100
+tips['tip percentage'] = tips.apply(
+    lambda tipPerc:
+        (tipPerc.tip / tipPerc.total_bill) * 100,
+        axis=1
+)
 
 tips.head()
 
